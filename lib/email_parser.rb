@@ -4,6 +4,7 @@
 # or whitespace (' ').
 # parser = EmailAddressParser.new(email_addresses)
 #parse method, should, additionally only return unique addresses.
+require 'pry'
 class EmailAddressParser    
 attr_accessor :email
 
@@ -13,6 +14,6 @@ attr_accessor :email
   
   def parse
     @email.delete(",").split.uniq
- 
+# binding.pry
   end
 end
