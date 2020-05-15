@@ -13,7 +13,6 @@ attr_accessor :email
   end
   
   def parse
-    binding.pry
     @email.delete(",").split.uniq
 # binding.pry
   end
